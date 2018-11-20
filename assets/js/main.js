@@ -38,16 +38,20 @@ function imageHeight() {
     
     var y = document.getElementsByClassName('ruta-button-bg');
         var aNode = y[0];
-    if ((secWindow.offsetHeight > element.height) && !aNode.classList.contains('clicked')) {
-        element.height = secWindow.offsetHeight * 1.2;
-        console.log(aNode.classList)
-        aNode.classList.add('clicked')
-    } else if (!aNode.classList.contains('clicked')){
-        for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" clicked", "");
+        if (window.innerWidth > 650){
+            if ((secWindow.offsetHeight > element.height) && !aNode.classList.contains('clicked')) {
+                element.height = secWindow.offsetHeight * 1.1;
+                aNode.classList.add('clicked')
+            } else if (!aNode.classList.contains('clicked')){
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" clicked", "");
+                }
+                element.height = defaultHeight;
+            } 
+        } else {
+            element.height = secWindow.offsetHeight * 1.1;
         }
-        element.height = defaultHeight;
-    }
+             
     
     
 }
