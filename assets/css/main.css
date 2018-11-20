@@ -57,10 +57,10 @@ header.fixed-header {
     font-size: 17px;
     height: 55px;
     line-height: 55px;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .login {
-    padding: 0 10px;
+    padding: 0 5px;
     height: 55px;
     line-height: 55px;
     position: relative;
@@ -79,7 +79,7 @@ header.fixed-header {
     font-size: 17px;
     height: 55px;
     line-height: 55px;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .search-container ul {
     position: absolute;
