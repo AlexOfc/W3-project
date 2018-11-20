@@ -51,10 +51,20 @@ header.fixed-header {
     display: inline-block;
     
 }
-.login {
-    padding: 0 5px;
+.share a, .star a{
+    text-decoration: none;
+    color:#ccc;
+    font-size: 17px;
     height: 55px;
-    line-height: 55px
+    line-height: 55px;
+    padding: 0 10px;
+}
+.login {
+    padding: 0 10px;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+    top: -3px;
 }
 .login img {
     max-width: 25px;
@@ -69,7 +79,7 @@ header.fixed-header {
     font-size: 17px;
     height: 55px;
     line-height: 55px;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 .search-container ul {
     position: absolute;
