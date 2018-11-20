@@ -161,7 +161,8 @@ header.fixed-header {
 }
 .selection-section {
     margin-top: 55px;
-    padding: 0
+    padding: 0;
+    overflow: hidden;
 }
 .selection-section img {
     width: 100%;
