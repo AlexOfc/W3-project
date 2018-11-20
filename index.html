@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="main">
+        <header class="w3-container fixed-header ruta-bg-color">
+            <button class="w3-left menu-button" onclick="ToggleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a href="javascript:void(0)" class="w3-left logo">
+                <img src="https://s.ruta0.net/images/logo2.png" alt="">
+            </a>
+            <ul class="w3-right action-block">
+                <li class="login"><img src="https://s.ruta0.net/pix/Login-Icon.png" alt=""></li>
+                <li class="search-container">
+                    <a href="javascript:void(0)" class="fa fa-search"></a>
+                    <ul>
+                        <li>
+                            <form action="" id="panel-search">
+                                <input type="search" class="panel-search" placeholder="Buscar...">
+                                <input type="submit">
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="w3-right navigation-menu">
+                <li>
+                    <a href="javscript:void(0)">Rutas</a>
+                    <ul class="ruta-bg-color">
+                        <li><a href="javscript:void(0)">Lorem</a></li>
+                        <li><a href="javscript:void(0)">Lorem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Lugares</a>
+                    <ul class="ruta-bg-color">
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Comunidad</a>
+                    <ul class="ruta-bg-color">
+                        <li>
+                            <a href="javascript:void(0)">Novedades</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Noticias</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="sidemenu" id="sidemenu">
+                <div class="ruta-bg-color side-top">
+                    <div class="button close-menu fa fa-times" onclick="ToggleMenu()">
+
+                    </div>
+                </div>
+                <nav class="side-main-part">
+                    <a href="javascript:void(0)"><i class="fa fa-home"></i>Home</a>
+                    <a href="javascript:void(0)"><i class="fa fa-road"></i>Buscador de Rutas</a>
+                    <a href="javascript:void(0)"><i class="fa fa-users"></i>Comunidad Ruta0</a>
+                    <div class="accordion-item">
+                        <h6 onclick="ToggleAccordeon(this)"><span><i class="fa fa-globe"></i>Lugares</span></h6>
+                        <div class="accordion-content">
+                            <a href="javascript:void(0)">Argentina</a>
+                            <a href="javascript:void(0)">Bolivia</a>
+                            <a href="javascript:void(0)">Brasil</a>
+                            <a href="javascript:void(0)">Chilie</a>
+                            <a href="javascript:void(0)">Uruguay</a>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                            <h6 onclick="ToggleAccordeon(this)"><span><i class="fa fa-commenting"></i>Seguinos en la redes!</span></h6>
+                            <div class="accordion-content">
+                                <a href="javascript:void(0)">Facebook</a>
+                                <a href="javascript:void(0)">Instagram</a>
+                                <a href="javascript:void(0)">YouTube</a>
+                                <a href="javascript:void(0)">Twitter</a>
+                                <a href="javascript:void(0)">Google+</a>
+                            </div>
+                        </div>
+                    <a href="javascript:void(0)"><i class="fa fa-envelope"></i>Publicar en Ruta0</a>
+                </nav>
+            </div>
+            <div class="backdrop" id="backdrop" onclick="ToggleMenu()"></div>
+        </header>
+        <div class="w3-display-container w3-container selection-section">
+            <img src="https://www.w3schools.com/w3images/london2.jpg" alt="London">
+            <div class="w3-display-middle order-window">
+                <div class="w3-bar w3-black">
+                    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotel</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button>
+                </div>
+                <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+                    <h3>Travel the world with us</h3>
+                    <div class="w3-row-padding" style="margin:0 -16px;">
+                        <div class="w3-half">
+                            <label>From</label>
+                            <input class="w3-input w3-border" type="text" placeholder="Departing from">
+                        </div>
+                        <div class="w3-half">
+                            <label>To</label>
+                            <input class="w3-input w3-border" type="text" placeholder="Arriving at">
+                        </div>
+                    </div>
+                    <p><button class="w3-button ruta-button-bg">Search and find dates</button></p>
+                </div>
+
+                <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+                    <h3>Find the best hotels</h3>
+                    <p>Book a hotel with us and get the best fares and promotions.</p>
+                    <p>We know hotels - we know comfort.</p>
+                    <p><button class="w3-button ruta-button-bg">Search Hotels</button></p>
+                </div>
+
+                <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+                    <h3>Best car rental in the world!</h3>
+                    <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off
+                        anywhere in the world with CarServiceRentalRUs</p>
+                    <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
+                    <p><button class="w3-button ruta-button-bg">Search Availability</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-section w3-clear">
+            <div class="w3-container">
+                <div class="w3-row-padding">
+                    <div class="w3-col l12 w3-auto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos reprehenderit
+                            hic, vitae soluta quod voluptate alias tempora quis obcaecati doloribus officia eveniet
+                            porro excepturi earum, deleniti quae. Asperiores, eaque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-row-padding">
+                    <div class="w3-half">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti dolor voluptatem, illum
+                            in voluptate id eveniet adipisci porro eos minus dolorum eum doloremque culpa unde animi ut
+                            dignissimos asperiores fugit?</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>Totam blanditiis ut molestias ipsum? Qui fuga quae harum, soluta molestias quidem hic neque
+                            dolorem nobis totam eaque, odit recusandae amet ab nihil voluptatem officia sequi! Sunt
+                            iure minima modi!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-row-padding">
+                    <div class="w3-third">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquam eaque voluptas non,
+                            possimus ullam quidem reprehenderit officiis, earum perspiciatis quis tenetur pariatur! Ea
+                            odit odio voluptate asperiores, quidem culpa?</p>
+                    </div>
+                    <div class="w3-third">
+                        <p>Provident maiores recusandae laborum consequatur commodi, doloremque eaque aperiam nulla
+                            quod suscipit magni aut voluptatibus in cum magnam earum vitae mollitia, repellendus
+                            asperiores? Beatae deleniti possimus dignissimos ex, aliquam voluptas.</p>
+                    </div>
+                    <div class="w3-third">
+                        <p>Hic mollitia pariatur consectetur illo tenetur? Assumenda autem doloremque quo repellendus
+                            suscipit ex officiis nihil amet? Ullam cumque, iusto sint, adipisci a eius omnis aperiam at
+                            dolorum tempora, sunt voluptates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-row-padding">
+                    <div class="w3-col l3 w3-half s6">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia veritatis hic necessitatibus laudantium quia voluptas, sed possimus expedita quas fuga laboriosam! Vero vel atque minus aspernatur nam? Id, eum ut?</p>
+                    </div>
+                    <div class="w3-col l3 w3-half s6">
+                        <p>Facere veritatis nemo sapiente necessitatibus. Consequuntur magnam consequatur sapiente nam laboriosam ullam illum sint est! Ipsam odit fugit magnam tenetur repudiandae corporis harum quo ratione molestias repellat minus, distinctio pariatur.</p>
+                    </div>
+                    <div class="w3-col l3 w3-half s6">
+                        <p>Aperiam eos porro voluptate fuga, soluta mollitia inventore. Minus, ratione unde! Temporibus dolorum, architecto deserunt dicta qui aliquid autem ad, fugiat laboriosam quidem iusto, est cumque placeat incidunt. Veniam, maiores.</p>
+                    </div>
+                    <div class="w3-col l3 w3-half s6">
+                        <p>Ipsum provident quibusdam tempore porro ipsa doloremque atque inventore iusto deleniti animi assumenda voluptate possimus, laudantium aperiam quasi! Itaque voluptates corporis inventore sequi fugit ab? Veritatis blanditiis consectetur perferendis excepturi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-white-text w3-center w3-row-padding">
+                Ruta0.com es una comunidad de viajeros de Argentina y Sudamerica, apasionados de las rutas y de conocer nuestra tierra, donde nos reunimos para contar experiencias y aprender de las de los demás.
+            </p>
+            <div class="social-block w3-center">
+                Seguinos en 
+                <a href="javascript:void(0)" class="social-ball fa fa-facebook"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-instagram"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-youtube"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-twitter"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-youtube"></a>
+            </div>
+            <div class="copyright w3-center w3-row-padding">
+                    Copyright ©2018 Ruta0.com. Diseño by <a href="javascript:void(0)">Pensar la Web</a>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

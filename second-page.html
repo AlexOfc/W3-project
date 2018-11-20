@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="main">
+        <header class="w3-container fixed-header ruta-bg-color">
+            <button class="w3-left menu-button" onclick="ToggleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a href="javascript:void(0)" class="w3-left logo">
+                <img src="https://s.ruta0.net/images/logo2.png" alt="">
+            </a>
+            <ul class="w3-right action-block">
+                <li class="login"><img src="https://s.ruta0.net/pix/Login-Icon.png" alt=""></li>
+                <li class="search-container">
+                    <a href="javascript:void(0)" class="fa fa-search"></a>
+                    <ul>
+                        <li>
+                            <form action="" id="panel-search">
+                                <input type="search" class="panel-search" placeholder="Buscar...">
+                                <input type="submit">
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="w3-right navigation-menu">
+                <li>
+                    <a href="javscript:void(0)">Rutas</a>
+                    <ul class="ruta-bg-color">
+                        <li><a href="javscript:void(0)">Lorem</a></li>
+                        <li><a href="javscript:void(0)">Lorem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Lugares</a>
+                    <ul class="ruta-bg-color">
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                        <li><a href="javascript:void(0)">Lorem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Comunidad</a>
+                    <ul class="ruta-bg-color">
+                        <li>
+                            <a href="javascript:void(0)">Novedades</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Noticias</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="sidemenu" id="sidemenu">
+                <div class="ruta-bg-color side-top">
+                    <div class="button close-menu fa fa-times" onclick="ToggleMenu()">
+
+                    </div>
+                </div>
+                <nav class="side-main-part">
+                    <a href="javascript:void(0)"><i class="fa fa-home"></i>Home</a>
+                    <a href="javascript:void(0)"><i class="fa fa-road"></i>Buscador de Rutas</a>
+                    <a href="javascript:void(0)"><i class="fa fa-users"></i>Comunidad Ruta0</a>
+                    <div class="accordion-item">
+                        <h6 onclick="ToggleAccordeon(this)"><span><i class="fa fa-globe"></i>Lugares</span></h6>
+                        <div class="accordion-content">
+                            <a href="javascript:void(0)">Argentina</a>
+                            <a href="javascript:void(0)">Bolivia</a>
+                            <a href="javascript:void(0)">Brasil</a>
+                            <a href="javascript:void(0)">Chilie</a>
+                            <a href="javascript:void(0)">Uruguay</a>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h6 onclick="ToggleAccordeon(this)"><span><i class="fa fa-commenting"></i>Seguinos en la redes!</span></h6>
+                        <div class="accordion-content">
+                            <a href="javascript:void(0)">Facebook</a>
+                            <a href="javascript:void(0)">Instagram</a>
+                            <a href="javascript:void(0)">YouTube</a>
+                            <a href="javascript:void(0)">Twitter</a>
+                            <a href="javascript:void(0)">Google+</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)"><i class="fa fa-envelope"></i>Publicar en Ruta0</a>
+                </nav>
+            </div>
+            <div class="backdrop" id="backdrop" onclick="ToggleMenu()"></div>
+        </header>
+        <div class="w3-display-container w3-container">
+            <div class="w3-sidebar w3-display-topleft content-sidebar-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia, beatae molestias quo id libero blanditiis! Earum eos eaque illum voluptates obcaecati est voluptatum delectus omnis, a fugit beatae at?
+            </div>
+            <div class="w3-sidebar w3-display-topright content-sidebar-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aspernatur! Facilis sed earum accusamus impedit nam officiis voluptates excepturi id officia corporis suscipit fugiat, ab reiciendis perferendis enim ipsam pariatur?
+            </div>
+            <div class="w3-container main-container">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit numquam molestiae similique neque ut repudiandae voluptatibus atque asperiores veritatis laboriosam pariatur qui impedit ex natus, perferendis saepe, obcaecati nemo maxime.</p>
+                <p>Sunt magni dolorum est repudiandae perspiciatis dolor. Asperiores itaque beatae obcaecati sequi reiciendis consequatur nemo sint quos odio officia amet quas id qui labore aliquam, adipisci tempora, incidunt velit ullam.</p>
+                <p>Minima itaque, deleniti iusto eveniet dolor a soluta tenetur necessitatibus optio provident molestias modi accusamus earum eum quaerat porro, totam, expedita error corrupti animi rerum voluptas nesciunt. Facilis, tenetur voluptas!</p>
+                <p>Dolorum officiis nemo quibusdam, corrupti voluptatum odio perspiciatis nam! Incidunt, repudiandae magnam esse labore perspiciatis vitae cupiditate soluta amet sequi mollitia, maxime odio consequatur! Illo debitis animi hic voluptates ducimus?</p>
+                <p>Natus voluptate eaque non fuga dolore quisquam magni necessitatibus quibusdam debitis odit. Dolores aliquid a alias explicabo dolor odit itaque facere quas beatae iure, harum aspernatur, soluta fuga cum quo.</p>
+                <p>Cum hic iste mollitia ut magni sint consequatur doloribus doloremque tempore minus! Voluptatum eius beatae possimus omnis atque nostrum, architecto perferendis consectetur et magnam illum aliquid, facilis optio velit excepturi?</p>
+                <p>Consequatur est dicta pariatur eum impedit magni laboriosam rerum quidem nihil molestias recusandae dolorem consequuntur dolor assumenda nesciunt corrupti consectetur, reprehenderit, perspiciatis aliquam quod! Assumenda error itaque ab vero neque?</p>
+                <p>Tenetur explicabo voluptas architecto dicta sint doloribus excepturi quo ea iste reiciendis dolores dignissimos quam, ipsam ab magni ad quas vitae aut. Rem repudiandae quia fugiat! Numquam aut voluptates quae!</p>
+                <p>Sit ab saepe deleniti quos? Iste necessitatibus exercitationem nostrum maiores distinctio harum quidem quia, repellat atque totam odit facere aut quis cupiditate, saepe voluptate, libero quas laborum eligendi nisi! Labore.</p>
+                <p>Quia molestias non cumque, officia ad, quas quaerat unde magnam eum accusamus autem maxime? Consequatur voluptatum commodi blanditiis quidem ipsam voluptate maiores quaerat. Aspernatur necessitatibus sit, rerum corrupti at praesentium.</p>
+                <p>Odio quaerat ea, maxime adipisci labore perferendis sit iste, neque praesentium voluptas officiis voluptate eius facilis et similique dolor fugiat nisi nam saepe minima molestias recusandae incidunt sapiente vel. Temporibus.</p>
+                <p>Velit amet, sint voluptatibus facilis culpa quisquam saepe ratione nemo inventore quod impedit molestiae quasi error numquam officiis cupiditate voluptates deleniti aspernatur alias reiciendis, soluta porro eum cumque neque? Officiis.</p>
+                <p>Beatae excepturi libero sit rem. Consequatur, esse dolores reprehenderit, nemo impedit, vero nulla numquam quidem a minus enim. Provident cumque, possimus impedit repudiandae tempora ab expedita praesentium doloribus modi tempore.</p>
+                <p>Tempore culpa rem cupiditate perspiciatis vero autem cumque mollitia voluptatum porro temporibus saepe exercitationem nostrum in asperiores eaque necessitatibus similique, quasi eius fuga animi sunt itaque tempora! Aperiam, labore sed!</p>
+                <p>Nisi, quis. Quaerat sapiente perferendis, cum vitae, voluptates praesentium aperiam saepe ex excepturi temporibus est vero cupiditate velit nesciunt itaque exercitationem inventore officia obcaecati molestias? Facilis velit iste tempora. Unde.</p>
+                <p>Pariatur, in perferendis alias, consequatur animi praesentium commodi eius, reprehenderit ullam nihil eaque error adipisci voluptatum harum fuga obcaecati facere eveniet voluptatem eum consectetur quaerat id. Vero saepe magnam maxime!</p>
+                <p>Ad laboriosam debitis ducimus excepturi, accusamus voluptatem eum, omnis fuga voluptas similique impedit perspiciatis tempora, quas blanditiis! Earum, temporibus maxime eaque quae eveniet magni tempora sit commodi atque enim ad?</p>
+                <p>Maxime cumque impedit saepe. Molestiae rem tempora itaque cumque quidem repudiandae soluta animi architecto dolorum? Cupiditate ea dignissimos fuga? Error ab consequatur quod laboriosam, placeat officia dignissimos corrupti distinctio similique.</p>
+                <p>Quod doloremque consequatur dolorem minus fugiat veritatis quis corporis recusandae odio id architecto neque in voluptate rerum cupiditate voluptas, iusto tenetur vel sint deleniti unde est asperiores. Cupiditate, ratione aperiam?</p>
+                <p>Rem aspernatur adipisci reiciendis, necessitatibus, eum voluptas, magni id consectetur ea sed dolorem. Quae animi labore ipsa a minus adipisci incidunt eaque quo magnam quia et itaque, ratione, neque non.</p>
+                <p>Vero dignissimos cupiditate rem rerum nisi similique, expedita distinctio ab, explicabo aliquid ipsum vitae fuga sit iusto sunt commodi! Neque adipisci impedit fuga omnis voluptatem vitae consequuntur perspiciatis veritatis nobis.</p>
+                <p>Possimus adipisci deleniti qui consequuntur, asperiores tenetur libero voluptate quos molestiae non odio necessitatibus impedit id rem saepe? Illo laboriosam necessitatibus eos? Neque, quidem. Cumque dignissimos doloremque ipsam eveniet quia?</p>
+                <p>Quisquam nesciunt commodi corporis aliquam magnam perspiciatis doloremque, sed, autem dolore omnis, perferendis esse ipsam? Dolor voluptas, sapiente ipsum blanditiis corrupti facere illo quae excepturi natus facilis earum ipsa libero.</p>
+                <p>Deleniti voluptates blanditiis doloribus nesciunt maxime facilis, impedit consectetur voluptate sit similique, placeat animi beatae repellendus tempore nobis nisi. Laudantium esse ea autem illum consequuntur vel temporibus quos velit exercitationem.</p>
+                <p>Totam repellendus tempora odio quibusdam, eum pariatur sint laudantium nobis quia. Architecto soluta est repudiandae aliquid neque facere ex exercitationem, dignissimos totam quibusdam! Alias nobis provident ut dignissimos obcaecati numquam.</p>
+                <p>Officia deserunt, autem excepturi molestias aliquid, magni iure culpa odit distinctio pariatur quas qui voluptate possimus eos accusantium enim minima velit voluptates ab obcaecati ducimus sunt aut, hic officiis! Mollitia!</p>
+                <p>Distinctio, molestias nulla? Possimus sit odit quod magni, maxime aliquam alias repudiandae recusandae voluptas ducimus molestiae inventore fugiat nihil labore qui iure pariatur magnam architecto adipisci! Quibusdam aliquam id quod?</p>
+                <p>Ducimus alias numquam iusto, ab hic voluptatum tempore provident repellat nobis impedit. Quisquam reiciendis consequatur quis excepturi delectus, numquam temporibus, repudiandae deleniti accusantium beatae id neque omnis. Saepe, nisi doloribus.</p>
+                <p>Assumenda, sint! Laborum, ab enim nemo laudantium labore obcaecati provident fugit voluptas sunt a vel veniam voluptatibus libero adipisci perferendis odio nihil nobis perspiciatis eligendi quidem accusamus velit. Aspernatur, itaque.</p>
+                <p>Alias, expedita. Velit autem ipsum, illum recusandae ipsam officia aperiam, vero deleniti dolorum magnam qui amet earum mollitia doloribus voluptatibus reprehenderit, accusamus veniam illo nam dolorem sapiente porro. Autem, reiciendis.</p>
+                <p>Similique at vero dolorem dicta, nam atque officia odio aperiam aliquid harum! Omnis reiciendis odio iure, est eaque esse temporibus corporis fugit, error culpa nesciunt magnam alias pariatur aliquid iste!</p>
+                <p>Eum iure voluptatem atque, officiis pariatur, voluptate, delectus sequi consequatur praesentium laboriosam neque optio. Rem quia tempora, minus, eum magni error quas autem perspiciatis sunt adipisci cumque! Delectus, harum sequi?</p>
+                <p>Animi cum voluptatibus officia, natus voluptatum excepturi quia praesentium magnam aliquam dolores id porro repellendus cupiditate libero suscipit. Maxime enim quo cum magni mollitia alias nesciunt eos iusto deleniti laboriosam!</p>
+                <p>Quo vero voluptas odio sint aperiam reiciendis sapiente possimus animi, nobis alias similique ratione itaque veniam amet voluptate exercitationem ex magni, fugit, molestias eum corrupti debitis asperiores. Quisquam, praesentium optio.</p>
+                <p>Dolor obcaecati consequuntur possimus rerum, soluta, eveniet provident temporibus nemo dolorum voluptates, non modi. Ducimus earum, ipsum quo quia optio quasi possimus nihil, quos neque ab cum! Quasi, eveniet aliquid!</p>
+                <p>Consequuntur eveniet assumenda asperiores inventore alias repudiandae sed rerum cum minus odit quasi similique recusandae labore reprehenderit deleniti, nisi quia quidem unde dolorem vel at dolorum fuga. Voluptatem, consectetur perferendis.</p>
+                <p>Laborum distinctio nostrum a explicabo molestias nam! Unde vero fuga temporibus adipisci, quae error culpa eius magnam non modi suscipit amet, eaque aliquam doloribus quas, explicabo soluta qui animi. Quo?</p>
+                <p>Consequatur quis praesentium, mollitia reiciendis atque vero error voluptate voluptatum tempora! Nostrum assumenda repudiandae rerum velit adipisci facere accusantium illum dolorem exercitationem eum, dolore soluta tempora eveniet ipsa neque optio.</p>
+                <p>Voluptas ipsum ipsa iure expedita sit impedit laudantium, natus aspernatur neque similique optio sunt quis eius maiores, explicabo assumenda provident quibusdam modi, sint ex necessitatibus architecto eaque? Deserunt, fuga officiis.</p>
+                <p>Tempora doloremque sed dolor accusantium, vel blanditiis necessitatibus quaerat quas itaque laudantium quis esse recusandae, cum reiciendis ullam incidunt facilis provident nulla mollitia. Sint, molestias ducimus est recusandae quidem magni?</p>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-white-text w3-center w3-row-padding">
+                Ruta0.com es una comunidad de viajeros de Argentina y Sudamerica, apasionados de las rutas y de conocer
+                nuestra tierra, donde nos reunimos para contar experiencias y aprender de las de los demás.
+            </p>
+            <div class="social-block w3-center">
+                Seguinos en
+                <a href="javascript:void(0)" class="social-ball fa fa-facebook"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-instagram"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-youtube"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-twitter"></a>
+                <a href="javascript:void(0)" class="social-ball fa fa-youtube"></a>
+            </div>
+            <div class="copyright w3-center w3-row-padding">
+                Copyright ©2018 Ruta0.com. Diseño by <a href="javascript:void(0)">Pensar la Web</a>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
