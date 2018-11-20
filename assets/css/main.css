@@ -331,7 +331,6 @@ color: rgb(52,73,94);
 @media screen and (max-width: 700px) {
     .selection-section img {
         width: auto;
-        height: 450px;
     }
     .selection-section .w3-bar-item {
         font-size: 12px

@@ -1,3 +1,5 @@
+
+
 function openLink(evt, linkName) {
     var i, x, tablinks;
     x = document.getElementsByClassName("myLink");
@@ -10,6 +12,7 @@ function openLink(evt, linkName) {
     }
     document.getElementById(linkName).style.display = "block";
     evt.currentTarget.className += " ruta-button-bg";
+    imageHeight()
 }
 
 function ToggleMenu() {
@@ -25,4 +28,22 @@ function ToggleAccordeon(element) {
     element.nextElementSibling.classList.toggle('toggled')
 }
 
-document.getElementsByClassName("tablink")[0].click();
+function imageHeight() {
+    var element = document.getElementById("selection-img"),
+        secWindow = document.getElementById("section-window");
+        var defaultHeight = document.getElementById("selection-img").naturalHeight;
+    
+    if (secWindow.offsetHeight > element.height) {
+        element.height = secWindow.offsetHeight * 1.2;
+    } else {
+        console.log()
+        element.height = defaultHeight;
+    }
+    
+    
+}
+document.body.onload = function() {
+    
+    imageHeight();
+    document.getElementsByClassName("tablink")[0].click();
+}
