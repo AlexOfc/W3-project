@@ -30,20 +30,18 @@ function ToggleAccordeon(element) {
 
 function imageHeight() {
     var element = document.getElementById("selection-img"),
-        secWindow = document.getElementById("section-window");
-        var defaultHeight = document.getElementById("selection-img").naturalHeight;
+        secWindow = document.getElementById("section-window"),
+        defaultHeight = document.getElementById("selection-img").naturalHeight;
     
     if (secWindow.offsetHeight > element.height) {
         element.height = secWindow.offsetHeight * 1.2;
     } else {
-        console.log()
         element.height = defaultHeight;
     }
     
     
 }
-document.body.onload = function() {
-    
+document.body.onload = function() {    
     imageHeight();
     document.getElementsByClassName("tablink")[0].click();
 }

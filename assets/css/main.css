@@ -221,6 +221,20 @@ footer {
 .sidemenu.toggled {
     transform: translateX(0);
 }
+.low-side-part {
+    margin-top: 37px
+}
+.white-text-side {
+    font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #FFF;
+    font-size: 8px;
+    margin: 0;
+    padding: 17px 20px;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+.socials-side {
+    padding: 17px 20px;
+}
 .side-top {
     height: 55px;
     max-width: 100%;
@@ -232,6 +246,9 @@ footer {
     color:#fff;
     line-height: 55px;
     cursor: pointer;
+    font-size: 13px;
+    padding: 0 6px;
+
 }
 .backdrop {
     position: fixed;
@@ -261,13 +278,14 @@ footer {
     font-size: 17px
 }
 .side-main-part a, .side-main-part span {
-    padding: 14px 20px 14px 53px;
+    padding: 15px 20px 15px 53px;
     display: block;
     color: #818181;
     position: relative;
     transition: all ease-in-out .2s;
     -webkit-transition: all ease-in-out .2s;
     font-size: 13px;
+    font-family: 'Roboto', 'Helvetica Nue', Arial, sans-serif;
     cursor: pointer;
 }
 .side-main-part span::after {
