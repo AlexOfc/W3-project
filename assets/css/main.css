@@ -332,6 +332,7 @@ color: rgb(52,73,94);
     top: 65px;
     z-index: 8;
     height: auto;
+    position: fixed!important;
 }
 .content-sidebar-1 {
     width: 160px;
