@@ -163,6 +163,10 @@ header.fixed-header {
     margin-top: 55px;
     padding: 0;
     overflow: hidden;
+    background-image: url(https://s.ruta0.net/pix/brdiv-7.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .selection-section img {
     width: 100%;
@@ -212,6 +216,8 @@ footer {
 }
 .order-window {
     width: 65%;
+    margin: auto;
+    padding: 40px 0;
 }
 .sidemenu {
     position: fixed;

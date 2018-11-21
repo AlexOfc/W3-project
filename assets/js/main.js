@@ -29,7 +29,7 @@ function ToggleAccordeon(element) {
     element.nextElementSibling.classList.toggle('toggled')
 }
 
-function imageHeight() {
+/*function imageHeight() {
     var element = document.getElementById("selection-img"),
         secWindow = document.getElementById("section-window"),
         defaultHeight = document.getElementById("selection-img").naturalHeight,
@@ -54,8 +54,8 @@ function imageHeight() {
              
     
     
-}
+}*/
 document.body.onload = function() {    
-    imageHeight();
+    //imageHeight();
     document.getElementsByClassName("tablink")[0].click();
 }
