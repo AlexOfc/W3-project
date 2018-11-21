@@ -27,7 +27,6 @@ function ToggleAccordeon(element) {
     element.classList.toggle('toggled');
     element.nextElementSibling.classList.toggle('toggled')
 }
+  
+document.getElementsByClassName("tablink")[0].click();
 
-document.body.onload = function() {    
-    document.getElementsByClassName("tablink")[0].click();
-}
